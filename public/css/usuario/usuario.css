@@ -1,0 +1,6 @@
+body{
+    background-image: url(/img/background_site.jpg);
+    background-attachment: scroll;
+    background-repeat: repeat;
+    background-size: 100%;
+}

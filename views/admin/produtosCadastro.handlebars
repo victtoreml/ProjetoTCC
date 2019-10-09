@@ -1,0 +1,90 @@
+<head>
+    <meta charset="UTF-8" />
+    <title>Cadastro Usuário</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/cadastro/cadastro.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="container">
+        <a class="links" id="paracadastro"></a>
+
+        <div class="content">
+            <div class="logo">
+
+                <a href="/"><img src="/img/logo.png" class="img_logo"></a>
+
+            </div>
+
+            <!--FORMULÁRIO DE CADASTRO-->
+            <div id="cadastro">
+                <form method="post" action="/Home">
+                    <h1>Cadastro Produtos</h1>
+                    <fieldset>
+                        <legend><b>Cadastre seu Produto</b></legend>
+                        <table width="500px">
+                            <tr class="imagem1">
+                                <td rowspan="8"><img src="/img/produto.png" height="100" width="100"></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Nome do Produto:</td>
+                                <td><input type="text" name="txtnomeprod" size="60" required="required"
+                                        pattern="[A-z\s]+$">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="tipo_categoria">Categoria:</label>
+                                </td>
+                                <td>
+                                    <select id="tipo_categoria">
+                                        <option selected disabled>Selecione</option>
+                                        <option>Pães</option>
+                                        <option>Bolos</option>
+                                        <option>Doces</option>
+                                        <option>Bebidas</option>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Valor:</td>
+                                <td>
+                                    <input type="number" name="txtvalor" size="60" required="required">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Descrição do Produto:
+                                </td>
+                                <td>
+                                    <textarea rows="10" cols="60" maxlength="500"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="tipo_categoria">Permite Entrega:</label>
+                                </td>
+                                <td>
+                                    <input type="radio" name="optentrega" value="Permite" required="required"
+                                        pattern="[A-z\s]+$"> Permite
+                                    <input type="radio" name="optentrega" value="Não Permite" required="required"
+                                        pattern="[A-z\s]+$"> Não Permite
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <br>
+                    <p>
+                        <input type="submit" value="Cadastrar" />
+                    </p>
+                    <p>
+                        <a href="/homeUsuario">Voltar</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

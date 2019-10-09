@@ -1,0 +1,116 @@
+<head>
+    <meta charset="UTF-8" />
+    <title>Cadastro Parceito</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href="/css/cadastro/cadastro.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <a class="links" id="paracadastro"></a>
+
+        <div class="content">
+            <div class="logo">
+
+                <a href="/"><img src="/img/logo.png" class="img_logo"></a>
+
+            </div>
+
+            <!--FORMULÁRIO DE CADASTRO-->
+            <div id="cadastro">
+                <form method="post" action="/Home">
+                    <h1>Cadastro Parceiro</h1>
+                    <fieldset>
+                        <legend><b>Dados Empresa</b></legend>
+                        <table width="500px">
+                            <tr class="imagem1">
+                                <td rowspan="6"><img src="/img/empresa.png" height="100" width="100"></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>CNPJ:</td>
+                                <td><input type="text" name="txtcnpj" size="40" required="required">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Razão Social:</td>
+                                <td><input type="text" name="txtnomefornec" size="40" required="required">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Nome do Estabelecimento:</td>
+                                <td><input type="text" name="txtestabelecimento" size="40" required="required">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Telefone:</td>
+                                <td><input type="text" name="txttelefonefornec" size="15" required="required"
+                                        pattern="[0-9]+$" placeholder="xx xxxxx-xxxx"></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend><b>Endereço</b></legend>
+                        <table width="500px">
+                            <tr class="imagem2">
+                                <td rowspan="9"><img src="/img/casa.png" height="100" width="100"></td>
+                            </tr>
+                            <tr>
+                                <td>Cep:</td>
+                                <td><input type="text" name="txtcep" size="40" required="required" pattern="[0-9]+$">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Endereço:</td>
+                                <td><input type="text" name="txtendereco" size="40" required="required"></td>
+                            </tr>
+                            <tr>
+                                <td>Número:</td>
+                                <td><input type="text" name="txtnumero" size="40" required="required" pattern="[0-9]+$">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Bairro:</td>
+                                <td><input type="text" name="txtbairro" size="40" required="required"></td>
+                            </tr>
+                            <tr>
+                                <td>Cidade:</td>
+                                <td><input type="text" name="txtcidade" size="40" required="required"
+                                        pattern="[A-z\s]+$"></td>
+                            </tr>
+                            <tr>
+                                <td>Complemento:</td>
+                                <td><input type="text" name="txtcomplemento" size="40" required="required"
+                                        pattern="[A-z\s]+$"></td>
+                            </tr>
+                            <tr>
+                                <td>Oferece Serviço de Entrega:</td>
+                                <td>
+                                    <input type="radio" name="optentrega" value="Sim" required="required"> SIM
+                                    <input type="radio" name="optentrega" value="Nao" required="required"> Não
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Senha:</td>
+                                <td><input type="password" name="txtsenha" size="40" pattern=".{0}|.{5,10}" required
+                                        title="Either 0 OR (5 to 10 chars)"></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+
+                    <p>
+                        <input type="submit" value="Cadastrar" />
+                    </p>
+
+                    <p class="link">
+                        Já tem conta?
+                        <a href="/login"> Ir para Login </a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

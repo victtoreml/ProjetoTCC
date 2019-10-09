@@ -1,0 +1,63 @@
+<head>
+    <meta charset="UTF-8" />
+    <title>Meu Café - Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/login/login.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <a class="links" id="paracadastro"></a>
+        <a class="links" id="paralogin"></a>
+
+        <div class="content">
+            <div class="logo">
+
+                <a href="/"><img src="/img/logo.png" class="img_logo"></a>
+
+            </div>
+
+            <!--FORMULÁRIO DE LOGIN-->
+            <div id="login">
+                <form method="post" action="">
+                    <h1>Login</h1>
+
+                    <p>
+                        <label for="cpf_login">CPF / CNPJ</label>
+                        <input id="nome_login" name="nome_login" required="required" type="number"
+                            placeholder="ex: 000.000.000-00" />
+                    </p>
+
+                    <p>
+                        <label for="senha_cad">Senha</label>
+                        <input id="senha_cad" name="senha_cad" required="required" type="password"
+                            placeholder="ex. 1234" />
+                    </p>
+
+                    <p>
+                        <label for="tipo_cad">Tipo de Acesso:</label>
+                        <select id="tipo_cad">   
+                            <option selected disabled>Selecione</option>
+                            <option>Usuário</option>
+                            <option>Parceiro</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <input type="submit" value="Logar" />
+                    </p>
+
+                    <p class="link">
+                        Ainda não tem conta? <a href="/cadastroUsuario">Cadastre-se</a><br>
+                        <br>
+                        É um Parceiro? <a href="/cadastroParceiro">Cadastre-se como Parceiro</a>
+                    </p>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

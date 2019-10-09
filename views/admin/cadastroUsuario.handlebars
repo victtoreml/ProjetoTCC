@@ -1,0 +1,140 @@
+<head>
+    <meta charset="UTF-8" />
+    <title>Cadastro Usuário</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/cadastro/cadastro.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <div class="container">
+        <a class="links" id="paracadastro"></a>
+
+        <div class="content">
+            <div class="logo">
+
+                <a href="/"><img src="/img/logo.png" class="img_logo"></a>
+
+            </div>
+
+            <!--FORMULÁRIO DE CADASTRO-->
+            <div id="cadastro">
+                <form method="post" action="/Home">
+                    <h1>Cadastro Usuário</h1>
+                    <fieldset>
+                        <legend><b>Dados Pessoais</b></legend>
+                        <table width="500px">
+                            <tr class="imagem1">
+                                <td rowspan="10"><img src="/img/pessoa.png" height="100" width="100"></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Foto:</td>
+                                <td><input type="file" name="txtfile" size="40">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Nome:</td>
+                                <td><input type="text" name="txtnome" size="40" required="required" pattern="[A-z\s]+$">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Idade:</td>
+                                <td><input type="text" name="txtidade" size="40" maxlength="3" required="required"
+                                        pattern="[0-9]+$"></td>
+                            </tr>
+                            <tr>
+                                <td>Nascimento:</td>
+                                <td><input type="date" name="txtnascimento" size="15" required="required"
+                                        pattern="[0-9]+$">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Sexo:</td>
+                                <td>
+                                    <input type="radio" name="optsexo" value="Masculino" required="required"
+                                        pattern="[A-z\s]+$"> Masculino
+                                    <input type="radio" name="optsexo" value="Feminino" required="required"
+                                        pattern="[A-z\s]+$"> Feminino
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>CPF:</td>
+                                <td><input type="text" name="txtcpf" id="cpf" size="15" required="required"
+                                        pattern="[0-9]+$">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Telefone:</td>
+                                <td><input type="text" name="txttelefone" size="15" required="required"
+                                        pattern="[0-9]+$" placeholder="xx xxxxx-xxxx"></td>
+                            </tr>
+                            <tr>
+                                <td>Email:</td>
+                                <td><input type="email" name="txtemail" size="15" required="required"
+                                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                        placeholder="ex. nome@gmail.com">
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend><b>Endereço</b></legend>
+                        <table width="500px">
+                            <tr class="imagem2">
+                                <td rowspan="8"><img src="/img/casa.png" height="100" width="100"></td>
+                            </tr>
+                            <tr>
+                                <td>Cep:</td>
+                                <td><input type="text" name="txtcep" size="40" required="required" pattern="[0-9]+$">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>Endereço:</td>
+                                <td><input type="text" name="txtendereco" size="40" required="required"></td>
+                            </tr>
+                            <tr>
+                                <td>Número:</td>
+                                <td><input type="text" name="txtnumero" size="40" required="required" pattern="[0-9]+$">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Bairro:</td>
+                                <td><input type="text" name="txtbairro" size="40" required="required"></td>
+                            </tr>
+                            <tr>
+                                <td>Cidade:</td>
+                                <td><input type="text" name="txtcidade" size="40" required="required"
+                                        pattern="[A-z\s]+$"></td>
+                            </tr>
+                            <tr>
+                                <td>Complemento:</td>
+                                <td><input type="text" name="txtcomplemento" size="40" required="required"
+                                        pattern="[A-z\s]+$"></td>
+                            </tr>
+                            <tr>
+                                <td>Senha:</td>
+                                <td><input type="password" name="txtsenha" size="40" pattern=".{0}|.{5,10}" required
+                                        title="Either 0 OR (5 to 10 chars)"></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+
+                    <p>
+                        <input type="submit" value="Cadastrar" />
+                    </p>
+
+                    <p class="link">
+                        Já tem conta?
+                        <a href="/Login"> Ir para Login </a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

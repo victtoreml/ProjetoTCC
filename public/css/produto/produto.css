@@ -1,0 +1,31 @@
+#produtos{
+    float: left;
+    left: 50%;
+    border-radius: 8px;
+    width: 70%;
+}
+.produto{
+    width: 31%;
+    height: 450px;
+    margin-top: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    float: left;
+    margin-left: 10px;
+}
+.produto img{
+    width: 90%;
+    margin: 12px;
+}
+.produto h1{
+    font-size: 17px;
+    margin: 8px;
+
+}
+.produto p{
+    margin: 8px;
+}
+.produto h2{
+    margin: 10px;
+    font-size: 17px;
+}
